@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Explore Tuhin Kumbhakar’s premium photography portfolio. Cinematic galleries, smooth animations, and creative excellence.">
+  <meta name="author" content="Tuhin Kumbhakar">
+  <meta name="keywords" content="photography, portfolio, Tuhin Kumbhakar, photo gallery, creative, cinematic photos">
+  <title>Glimps Of Nature</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+  <header>
+  <div class="logo-brand">
+    <img src="logo.png" alt="Logo" class="logo">
+    <h1 class="brand">Glimps Of Nature</h1>
+  </div>
+  <div class="menu-toggle" id="menu-toggle">☰</div>
+  <nav id="navbar">
+    <ul class="nav-right">
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#contact">Membership Form</a></li>
+    </ul>
+  </nav>
+</header>
+
+
+  <section class="hero">
+    <h1>Welcome to My Photography World</h1>
+    <button id="exploreBtn" class="explore-btn">Explore Gallery</button>
+  </section>
+
+  <section id="gallery" class="hidden">
+    <h2>Clicks</h2>
+    <div class="gallery-grid">
+      <div><img src="images/DSCN5015.JPG" alt=""></div>
+      <div><img src="images/DSCN5487.JPG" alt=""></div>
+      <div><img src="images/DSCN5523.JPG" alt=""></div>
+      <div><img src="images/DSCN5558.JPG" alt=""></div>
+      <div><img src="images/DSCN5647.JPG" alt=""></div>
+      <div><img src="images/DSCN6145.JPG" alt=""></div>
+      <div><img src="images/IMG_20211114_121502.jpg" alt=""></div>
+      <div><img src="images/Picsart_22-04-01_19-07-19-823.jpg" alt=""></div>
+      
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>Founder</h2>
+    <div class="founder">
+      <div class="founder-img-wrapper">
+        <img src="founder1.jpg" alt="Founder">
+        <div class="popup-name">Tuhin</div>
+      </div>
+      <div class="bio">
+        <div class="bio-box">Name: <b><i>Tuhin Kumbhakar</i></b><br>Age: 18+<br>Education: 10+2<br>Hobby: Music & Photography<br>Address: Adra, West Bengal, India</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="services">
+    <h2>Services</h2>
+    <div class="service-cards">
+      <div class="card">Event Photography<br><small>Weddings & Corporate</small></div>
+      <div class="card">Portraits<br><small>Studio & Lifestyle</small></div>
+      <div class="card">Nature & Travel<br><small>Landscapes & Wildlife</small></div>
+    </div>
+  </section>
+
+  <!--Community part-->  
+    <section id="community">
+    <h2>Community</h2>
+          <section class="text-gray-600 body-font">
+            <div class="notice"><u>Notice Board</u></div> 
+  <section id="contact">
+    <div class="form-wrapper">
+      <div class="form-texture"></div>
+      <div class="membership-form">
+        <h2>Membership Form</h2>
+        <form id="contactForm">
+          <label>Full Name:<input type="text" name="myName" required></label>
+          <label>Address:<textarea name="myAddress" rows="3" required></textarea></label>
+          <label>Date of Birth:<input type="date" name="myAge" required></label>
+          <label>Gender:
+            <div class="gender-radio">
+              <label><input type="radio" name="myGender" value="Male" required><span>Male</span></label>
+              <label><input type="radio" name="myGender" value="Female"><span>Female</span></label>
+              <label><input type="radio" name="myGender" value="Other"><span>Other</span></label>
+            </div>
+          </label>
+          <label>Contact Number:<input type="number" name="myContact" required></label>
+          <label>Email:<input type="email" name="myEmail" required></label>
+          <label>Upload Portrait:<input type="file" name="myPics" accept="image/*" required></label>
+          <div class="form-buttons">
+            <button type="submit" class="submit-btn">Submit Now</button>
+            <button type="reset" class="reset-btn">Reset</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="social-icons">
+      <a href="#"><img src="insta.png" alt="Instagram"></a>
+      <a href="#"><img src="gmail.png" alt="Gmail"></a>
+      <a href="#"><img src="facebook.png" alt="Facebook"></a>
+    </div>
+    <div class="policy-links">
+      <a href="privacy-policy.pdf" target="_blank">Privacy Policy</a> |
+      <a href="terms-and-conditions.pdf" target="_blank">Terms & Conditions</a>
+    </div>
+    <div class="footer-copy">© All Right Reserved | © Tuhin</div>
+  </footer>
+
+  <div id="lightbox" class="lightbox hidden"><img src="" alt="Full size"></div>
+  <script src="script.js"></script>
+</body>
+</html>
